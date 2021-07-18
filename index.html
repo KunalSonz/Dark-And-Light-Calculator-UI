@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+
+  <!-- Font Awesome -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+  />
+  <!-- Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+  rel="stylesheet"
+  />
+
+
+
+
+
+  <link id="stlSheet" rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+  <div id="fold1">
+    <section class="calBase">
+      <div class="topnudge">
+        <p>9:30</p>
+        <div class="topnudgeIcon">
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-battery-three-quarters"></i>
+          <i class="fas fa-envelope"></i>
+        </div>
+      </div>
+      <form>
+        <div class="calDisplay">
+          <!-- <input class="numDisplay" type="text" name="" id="" placeholder="925"> -->
+          <p class="numDisplay">387</p>
+        </div>
+        <div class="calButton">
+          <input class="workbtn" type="button" value="C"
+          onclick="delData()">
+          <input class="workbtn" type="button" value="L" onclick="swapsheet('style2.css')">
+          <input  class="workbtn"type="button" value="D"  onclick="swapsheet('style1.css')">
+          <input class="workbtn" type="button" value="/"
+          onclick="divide()">
+
+
+          <input id="numbtn" type="button" value="7"
+          onclick="enterNo(7)">
+          <input id="numbtn" type="button" value="8"
+          onclick="enterNo(8)">
+          <input class="numbtn" type="button" value="9"
+          onclick="enterNo(9)">
+
+
+          <input  class="workbtn" type="button" value="*"
+          onclick="multiply()">
+
+
+          <input class="numbtn" type="button" value="4"
+          onclick="enterNo(4)">
+          <input class="numbtn" type="button" value="5"
+          onclick="enterNo(5)">
+          <input class="numbtn" type="button" value="6"
+          onclick="enterNo(6)">
+
+
+          <input class="workbtn" type="button" value="-"
+          onclick="substract()">
+
+
+          <input class="numbtn" type="button" value="1"
+          onclick="enterNo(1)">
+          <input class="numbtn" type="button" value="2"
+          onclick="enterNo(2)">
+          <input class="numbtn" type="button" value="3"
+          onclick="enterNo(3)">
+
+
+          <input class="workbtn" type="button" value="+"
+          onclick="add()">
+
+
+          <input class="numbtn" type="button" value="0"
+          onclick="enterNo(0)">
+          <input class="numbtn" type="button" value="."
+          onclick="enterDot()">
+
+          
+          <input class="equals" type="button" value="="
+          onclick="enterData()">
+        </div>
+      </form>
+      
+    </section>
+  </div>
+
+
+
+
+
+
+  <!-- MDB -->
+  <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
+  ></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
